@@ -1,0 +1,27 @@
+#deliveryEmpty {
+  background-color: lightyellow;
+  display: flex;
+  align-items: center;
+}
+
+#deliveryEmpty img {
+  margin: 10px;
+}
+
+#deliveryEmpty p {
+  font-weight: bold;
+}
+
+#deliveryInformationsTable thead th {
+  font-weight: normal;
+}
+
+#deliveryInformationsTable th, #deliveryInformationsTable td{
+  border-bottom: solid #CCCCCC 1px;
+  padding: 10px 250px 10px 10px;
+  /*       top right bottom left */
+}
+
+#deliveryInformationsTable tbody > tr:nth-of-type(even) {
+  background-color: #F4F4F4;
+}

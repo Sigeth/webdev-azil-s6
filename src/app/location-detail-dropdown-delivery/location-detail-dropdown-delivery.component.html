@@ -1,1 +1,31 @@
-<p>location-detail-dropdown-delivery works!</p>
+<div id="deliveryInformationsDiv">
+  <p>Find here all deliveries for hardware components</p>
+  @if (deliveryInformations.length === 0) {
+    <div id="deliveryEmpty">
+      <img ngSrc="assets/icons/orange-warning.ico" width="32" height="32" alt="orange warning icon"/>
+      <p>No deliveries to display</p>
+    </div>
+  } @else {
+    <table id="deliveryInformationsTable">
+      <thead>
+      <tr>
+        <th scope="col">Device</th>
+        <th scope="col">Model</th>
+        <th scope="col">Number</th>
+        <th scope="col">Expected Delivery</th>
+      </tr>
+      </thead>
+      <tbody>
+        @for (deliveryInformation of deliveryInformations; track deliveryInformation.number) {
+          <tr>
+            <td>{{ deliveryInformation.device }}</td>
+            <td>{{ deliveryInformation.model }}</td>
+            <td>{{ deliveryInformation.number }}</td>
+            <td>{{ deliveryInformation.expected_delivery }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  }
+</div>
+
