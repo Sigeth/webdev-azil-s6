@@ -1,0 +1,120 @@
+#BigTruc{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+#LocationId_Status{
+
+    display: grid;
+    grid-column: 1 / 2;
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+#LocationIdValue{
+
+    font-weight: bold;
+
+}
+
+#Status{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+#StatusTitle{
+
+    grid-row: 1 / 2;
+
+}
+
+#StatusContent{
+
+    grid-row: 2 / 2;
+    display: flex;
+    align-items: center;
+    background-color: lightcoral;
+
+}
+
+#StatusImg{
+
+    width: 30px;
+    height: 30px;
+
+}
+
+#StatusValue{
+
+    font-weight: bold;
+
+}
+
+#Details{
+
+    display: grid;
+    grid-column: 2 / 2;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: solid lightgray;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#LocationType{
+
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+
+}
+
+#LocationTypeValue{
+
+    font-weight: bold;
+
+}
+
+#AttachedRegion{
+
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+
+}
+
+#AttachedRegionValue{
+
+    font-weight: bold;
+
+}
+
+#AttachedProject{
+
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+
+}
+
+#AttachedProjectValue{
+
+    font-weight: bold;
+
+}
+
+#VendorDashboard{
+
+    grid-column: 4 / 4;
+    grid-row: 2 / 3;
+
+}
+
+#VendorDashboardValue{
+
+    font-weight: bold;
+
+}
