@@ -7,6 +7,7 @@ import { LocationDetailComponent } from './location-detail/location-detail.compo
 import { LocationDetailInformationsComponent } from './location-detail-informations/location-detail-informations.component';
 import { LocationDetailDropdownAdministrativeComponent } from './location-detail-dropdown-administrative/location-detail-dropdown-administrative.component';
 import { LocationDetailDropdownDeliveryComponent } from './location-detail-dropdown-delivery/location-detail-dropdown-delivery.component';
+import { LocationDetailDropdownComponent } from './location-detail-dropdown/location-detail-dropdown.component';
 import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
@@ -15,7 +16,8 @@ import {NgOptimizedImage} from "@angular/common";
     LocationDetailComponent,
     LocationDetailInformationsComponent,
     LocationDetailDropdownAdministrativeComponent,
-    LocationDetailDropdownDeliveryComponent
+    LocationDetailDropdownDeliveryComponent,
+    LocationDetailDropdownComponent
   ],
   imports: [
     BrowserModule,

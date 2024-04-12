@@ -1,0 +1,35 @@
+
+
+body{
+    border: solid;
+    margin: 10px;
+}
+
+
+#Menue{
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-template-columns: 500px 350px;
+    gap: 10px 2em;
+}
+
+#icone-titre{
+    grid-column: 1;
+    display: flex;
+    align-items: center; 
+}
+
+#img{
+    width: 30px; 
+    height: 30px;
+}
+
+#txt{
+    margin-left: 20px; 
+}
+
+.droite{
+    align-self: center;
+    grid-column: 5;
+}
