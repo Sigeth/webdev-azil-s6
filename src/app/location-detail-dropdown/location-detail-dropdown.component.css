@@ -18,6 +18,8 @@
 
 #Menue:hover{
     cursor: pointer;
+    background-color: gray;
+    animation: fadeIn 0.3s ease-in-out;
 }
 
 #icone-titre{
