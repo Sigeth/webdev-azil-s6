@@ -13,4 +13,20 @@ export class LocationDetailDropdownAdministrativeComponent {
       this.contactAvailabilities[i] = [true, true, true, false, true, true, true]
     }
   }
+
+  checkHandler(i: number, j: number) {
+    let checkboxChecked = this.contactAvailabilities[i][j]
+    if (i == 0) {
+      if (checkboxChecked) {
+        this.contactAvailabilities[1][j] = true;
+        this.contactAvailabilities[2][j] = true;
+      }
+    } else {
+      if(i == 1) {
+        this.contactAvailabilities[0][j] = this.contactAvailabilities[2][j] && checkboxChecked;
+      } else {
+        this.contactAvailabilities[0][j] = this.contactAvailabilities[1][j] && checkboxChecked;
+      }
+    }
+  }
 }

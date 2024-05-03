@@ -48,8 +48,8 @@
         @for (type of ["24h", "AM", "PM"]; track type; let i = $index) {
           <tr>
             <th scope="row">{{type}}</th>
-            @for (contactAvailability of contactAvailabilities[i]; track $index) {
-              <td><input type="checkbox" [value]="contactAvailability" [checked]="contactAvailability" /></td>
+            @for (contactAvailability of contactAvailabilities[i]; let j = $index; track j) {
+              <td><input type="checkbox" [value]="contactAvailability" [checked]="contactAvailability" (click)="checkHandler(i, j)" /></td>
             }
           </tr>
         }
