@@ -170,7 +170,9 @@ nav a {
     DEBUT STYLE CONTENU - VOTRE SECTION
 #############################################
 */
-
+body {
+  font-family: var(--primary-font);
+}
 /*
 #############################################
       FIN STYLE CONTENU - VOTRE SECTION

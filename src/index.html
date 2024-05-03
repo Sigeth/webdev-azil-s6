@@ -1,94 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- DEBUT INTEGRATION LIENS CSS - VOTRE SECTION -->
+    <!-- DEBUT LIENS CSS NAVBAR - NE PAS TOUCHER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FIN LIENS CSS NAVBAR - NE PAS TOUCHER -->
 
-  <!-- FIN INTEGRATION LIENS CSS - VOTRE SECTION -->
+    <!-- DEBUT INTEGRATION LIENS CSS - VOTRE SECTION -->
 
-  <style>
+    <!-- FIN INTEGRATION LIENS CSS - VOTRE SECTION -->
 
-    /*
+  </head>
+  <body>
+  <!-- DEBUT HTML NAVBAR - PAS TOUCHER -->
 
-    #############################################
-    DEBUT STYLE NAVBAR - PAS TOUCHER SINON GOULAG
-    #############################################
+  <header>
+    <div id="top-bar">
+      <div class="navbar">
+        <a href="#home">My Network</a>
+        <a href="#news">Solutions</a>
+        <div class="dropdown">
+          <button class="dropbtn">Regions
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Locations
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
 
-    */
+      </div>
+    </div>
 
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+    <div id="bottom-bar">
+      <p> Home   >   Networking   >   Flexible </p>
+    </div>
+  </header>
 
-    header {
-      background-color: #012c10;
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+  <!-- FIN HTML NAVBAR - PAS TOUCHER -->
 
-    #bottom-bar
-    {
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: darkgrey;
-    }
-
-    nav {
-      display: flex;
-      gap: 20px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 8px 15px;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #555;
-    }
-
-    @media screen and (min-width: 900px) {
-      #content {
-        display: flex;
-        margin-left: 3%;
-      }
-    }
-
-    /*
-    #############################################
-    FIN STYLE NAVBAR - PAS TOUCHER SINON GOULAG
-    #############################################
-    */
-
-
-
-    /*
-    #############################################
-        DEBUT STYLE CONTENU - VOTRE SECTION
-    #############################################
-    */
-
-    /*
-    #############################################
-          FIN STYLE CONTENU - VOTRE SECTION
-    #############################################
-    */
-
-  </style>
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <div id="content">
+    <!-- DEBUT HTML CONTENU - VOTRE SECTION -->
+    <app-root></app-root>
+    <!-- FIN HTML CONTENU - VOTRE SECTION -->
+  </div>
+  </body>
 </html>
