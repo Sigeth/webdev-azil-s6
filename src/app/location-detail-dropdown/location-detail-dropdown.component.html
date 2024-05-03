@@ -1,29 +1,37 @@
 <div id="main">
-    <div id="Menue" (click)="afficherSecondComposant()">
+    @if(this.menu == 2){
+    <div class="Menue">
         <div id="icone-titre">
-            
-            @if(this.menu == 2){
-                <img src="../assets/img/administrative.png" alt="png" id="img">
-                <h3 id="txt">Administrative Information</h3>
-            }
-            @else{
-                <img src="../assets/img/livre.png" alt="png" id="img">
-                <h3 id="txt">Delivery Information</h3>
-            }
+            <img src="../assets/img/administrative.png" alt="png" id="img">
+            <h3 id="txt">Administrative Information</h3>
         </div>
         <div class="droite">
             <img src="../assets/img/fleche.png" alt="png" id="img">
             <h4>view more</h4>
         </div>
     </div>
-    @if(this.form == true && this.menu == 2){
-        <div class="new">
-        <app-location-detail-dropdown-administrative></app-location-detail-dropdown-administrative>
-        </div>
     }
-    @if(this.form == true && this.menu == 1){
-        <div class="new">
-        <app-location-detail-dropdown-delivery></app-location-detail-dropdown-delivery>
+    @if(this.menu == 1){
+    <div class="Menue">
+        <div id="icone-titre">
+            <img src="../assets/img/livre.png" alt="png" id="img">
+            <h3 id="txt">Delivery Information</h3>
+
         </div>
+        <div class="droite">
+            <img src="../assets/img/fleche.png" alt="png" id="img">
+            <h4>view more</h4>
+        </div>
+    </div>
+    }
+    @if(this.open1 == true && this.menu == 2){
+    <div class="new">
+        <app-location-detail-dropdown-administrative></app-location-detail-dropdown-administrative>
+    </div>
+    }
+    @if(this.open2 == true && this.menu == 1){
+    <div class="new">
+        <app-location-detail-dropdown-delivery></app-location-detail-dropdown-delivery>
+    </div>
     }
 </div>

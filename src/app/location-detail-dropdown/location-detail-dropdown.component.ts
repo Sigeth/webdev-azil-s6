@@ -1,5 +1,5 @@
 import { Component,Input } from '@angular/core';
-import { trigger, style, animate, transition } from '@angular/animations';
+import {LocationDetailComponent} from '../location-detail/location-detail.component'
 
 @Component({
   selector: 'app-location-detail-dropdown',
@@ -9,17 +9,10 @@ import { trigger, style, animate, transition } from '@angular/animations';
 export class LocationDetailDropdownComponent {
 
   @Input() menu?: number;
+
+  @Input() open1?: boolean;
+  @Input() open2?: boolean;
   
   form: boolean = false;
-
-  afficherSecondComposant() {
-    if(this.form == false){
-      this.form = true;
-      console.log(this.menu)
-    }
-    else{
-      this.form = false;
-    }
-  }
 
 }
