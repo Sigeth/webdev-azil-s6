@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-location-detail',
@@ -11,25 +11,48 @@ export class LocationDetailComponent {
   open2: boolean = false;
 
 
-  afficherSecondComposant(open:string){
-    if(open == "comp1"){
-      if(this.open1 == false){
-      this.open1 = true;
+  changeHide2() {
+    if (this.open2 == true) {
       this.open2 = false;
+      this.open1 = true;
+    }
+    else{
+      this.open2 = true;
+      this.open1 = false;
+    }
+  }
+
+  changeHide() {
+    if(this.open1 == true){
+      this.open1 = false;
+      this.open2 = true;
+    }
+    else{
+      this.open1 = true;
+      this.open2 = false
+    }
+  }
+
+  afficherSecondComposant(open: string) {
+    if (open == "comp1") {
+      if (this.open1 == false) {
+        this.open1 = true;
+        this.open2 = false;
       }
-      else{
+      else {
         this.open1 = false;
       }
     }
-    else{
-      if(this.open2 == false){
+    else {
+      if (this.open2 == false) {
         this.open2 = true;
         this.open1 = false;
       }
-      else{
+      else {
         this.open2 = false;
       }
     }
   }
+
 
 }

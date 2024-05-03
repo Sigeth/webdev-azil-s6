@@ -1,4 +1,4 @@
-import { Component,Input } from '@angular/core';
+import { Component,EventEmitter,Input, Output } from '@angular/core';
 import {LocationDetailComponent} from '../location-detail/location-detail.component'
 
 @Component({
@@ -12,7 +12,17 @@ export class LocationDetailDropdownComponent {
 
   @Input() open1?: boolean;
   @Input() open2?: boolean;
-  
-  form: boolean = false;
 
+
+  @Output() onHide = new EventEmitter<boolean>();
+  @Output() onHide2 = new EventEmitter<boolean>();
+
+  
+  setHide(){
+     this.onHide.emit(true);
+  }
+
+  setHide2(){
+    this.onHide2.emit(true);
+ }
 }

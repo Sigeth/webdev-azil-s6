@@ -1,25 +1,25 @@
 <div id="main">
     @if(this.menu == 2){
-    <div class="Menue">
+    <div class="Menue" (click)="setHide2()">
         <div id="icone-titre">
             <img src="../assets/img/administrative.png" alt="png" id="img">
             <h3 id="txt">Administrative Information</h3>
         </div>
         <div class="droite">
-            <img src="../assets/img/fleche.png" alt="png" id="img">
+            <img src="../assets/icons/fleche_verticale.svg" alt="png" id="img">
             <h4>view more</h4>
         </div>
     </div>
     }
     @if(this.menu == 1){
-    <div class="Menue">
+    <div class="Menue" (click)="setHide()">
         <div id="icone-titre">
             <img src="../assets/img/livre.png" alt="png" id="img">
             <h3 id="txt">Delivery Information</h3>
 
         </div>
         <div class="droite">
-            <img src="../assets/img/fleche.png" alt="png" id="img">
+            <img src="../assets/icons/fleche_verticale.svg" alt="png" id="img">
             <h4>view more</h4>
         </div>
     </div>

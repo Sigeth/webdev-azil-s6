@@ -1,3 +1,4 @@
 <app-location-detail-informations></app-location-detail-informations>
-<app-location-detail-dropdown [menu]="2" [open1]=this.open1 (click)="afficherSecondComposant('comp1')"></app-location-detail-dropdown>
-<app-location-detail-dropdown [menu]="1" [open2]=this.open2  (click)="afficherSecondComposant('comp2')"></app-location-detail-dropdown>
+<app-location-detail-dropdown [menu]="2" [open1]="open1" (onHide2)="changeHide()"></app-location-detail-dropdown>
+<app-location-detail-dropdown [menu]="1" [open2]="open2" (onHide)="changeHide2()"></app-location-detail-dropdown>
+
