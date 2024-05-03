@@ -1,1 +1,61 @@
-<p>location-detail-dropdown-administrative works!</p>
+<form id="general_information">
+  <h3>General Information</h3>
+  <p>These informations are used by My support and other team.</p>
+  <label for="location_name">Location name</label>
+  <input id="location_name" placeholder="Input text"/>
+  <label for="location_desc">Location Description</label>
+  <input id="location_desc" placeholder="Input text"/>
+  <label for="address">Number and street name</label>
+  <input id="address" placeholder="Input text"/>
+  <label for="postal_code">Postal code</label>
+  <input id="postal_code" placeholder="Input text"/>
+  <label for="city">City</label>
+  <input id="city" placeholder="Input text"/>
+  <button type="submit">Save</button>
+</form>
+<form id="local_contact_information">
+  <h3>Local Contact Information</h3>
+  <p>A local contact is mandatory to handle on-site actions</p>
+  <label for="last_name">Last name</label>
+  <input id="last_name" placeholder="Input text"/>
+  <label for="first_name">First name</label>
+  <input id="first_name" placeholder="Input text"/>
+  <label for="phone">Phone</label>
+  <input id="phone" placeholder="Input text"/>
+  <label for="email">E-mail</label>
+  <input id="email" type="email" placeholder="Input text"/>
+  <div id="availabity_div">
+    <h4>Availability</h4>
+    <p>(UTC+01:00) Bruxelles, Copenhague, Madrid, Paris</p>
+    <button class="select_availability">Manual</button>
+    <button class="select_availability">24h/7j</button>
+    <button class="select_availability">Weekdays only</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Monday</th>
+          <th scope="col">Tuesday</th>
+          <th scope="col">Wednesday</th>
+          <th scope="col">Thursday</th>
+          <th scope="col">Friday</th>
+          <th scope="col">Saturday</th>
+          <th scope="col">Sunday</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (type of ["24h", "AM", "PM"]; track type; let i = $index) {
+          <tr>
+            <th scope="row">{{type}}</th>
+            @for (contactAvailability of contactAvailabilities[i]; track $index) {
+              <td><input type="checkbox" [value]="contactAvailability" [checked]="contactAvailability" /></td>
+            }
+          </tr>
+        }
+      </tbody>
+    </table>
+    <button type="submit">Save</button>
+  </div>
+</form>
+
