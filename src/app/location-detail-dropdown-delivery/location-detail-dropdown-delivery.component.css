@@ -23,5 +23,5 @@
 }
 
 #deliveryInformationsTable tbody > tr:nth-of-type(even) {
-  background-color: #F4F4F4;
+  background-color: var(--light-grey);
 }
