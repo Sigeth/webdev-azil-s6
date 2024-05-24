@@ -27,9 +27,9 @@
   <div id="availabity_div">
     <h4>Availability</h4>
     <p>(UTC+01:00) Bruxelles, Copenhague, Madrid, Paris</p>
-    <button class="select_availability">Manual</button>
-    <button class="select_availability">24h/7j</button>
-    <button class="select_availability">Weekdays only</button>
+    <button type="button" class="select_availability">Manual</button>
+    <button type="button" class="select_availability" (click)="check_24h_7()">24h/7j</button>
+    <button type="button" class="select_availability" (click)="check_weekdays()">Weekdays only</button>
 
     <table>
       <thead>
@@ -45,11 +45,11 @@
         </tr>
       </thead>
       <tbody>
-        @for (type of ["24h", "AM", "PM"]; track type; let i = $index) {
+        @for (type of ["24h", "AM", "PM"]; let i = $index; track i ) {
           <tr>
             <th scope="row">{{type}}</th>
             @for (contactAvailability of contactAvailabilities[i]; let j = $index; track j) {
-              <td><input type="checkbox" [value]="contactAvailability" [checked]="contactAvailability" (click)="checkHandler(i, j)" /></td>
+              <td><input type="checkbox" [checked]="contactAvailability" (click)="checkHandler(i, j)" /></td>
             }
           </tr>
         }
