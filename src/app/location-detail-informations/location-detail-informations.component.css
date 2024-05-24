@@ -1,3 +1,5 @@
+
+
 #Title{
 
     display: grid;
@@ -44,9 +46,10 @@
 
 #Content{
 
+    margin-right: 3%;
     display: grid;
     grid-template-columns: 0.4fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr; 
 
 }
 
@@ -79,7 +82,7 @@
 }
 
 #StatusContent{
-    
+
     padding-left: 5%;
     display: flex;
     align-items: center;
