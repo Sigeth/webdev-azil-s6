@@ -1,0 +1,93 @@
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    color:black;
+  }
+
+
+  .Save {
+    background-color: white;
+    color: black;
+    padding:1% 4%;
+    border: 2px solid black; 
+    font-weight: bold;
+  }
+
+  .ScTxt {
+    font-size:smaller;
+    color :gray;
+  }
+
+  .radio {
+        background-color: white;
+        color: black;
+        margin-right : 5%;
+        border: 2px solid gray;
+        border-width: 2px 2px;
+        border-radius: 40px;
+        padding-right : 1%;
+        padding-left: 1%;
+        padding-top: 0.5%;
+        padding-bottom : 0.5%;
+  } 
+
+  .radio:focus {
+    background-color: white;
+    color: black;
+    margin-right : 5%;
+    border: 2px solid #F16E00;
+    font-weight: bold;
+    border-width: 2px 2px;
+    border-radius: 40px;
+    padding-right : 1%;
+    padding-left: 1%;
+    padding-top: 0.5%;
+    padding-bottom : 0.5%;
+} 
+
+input[type="checkbox"] {
+    position: relative;
+    appearance: none;
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid #999; 
+    cursor: pointer;
+  }
+  
+
+  input[type="checkbox"]:checked::after {
+    content: ""; 
+    position: absolute;
+    left: 5px; 
+    top: 1px; 
+    width: 6px; 
+    height: 12px; 
+    border: 2px solid #F16E00; 
+    border-width: 0 2px 2px 0; 
+    transform: rotate(45deg); 
+  }
+
+  input[type="checkbox"]:checked {
+    border: 2px solid #F16E00;
+    clip: auto;
+  } 
+
+.general {
+    padding : 5%;
+    padding-top : 2%;
+}
+
+input:focus {
+    outline: none;
+  }
+input::placeholder{
+    text-align: left;
+    font-weight:normal;
+    color:black;
+    opacity: 100%;
+    margin:2%;
+}
+
+#Admintable tbody > tr:nth-of-type(even) {
+    background-color: var(--light-grey);
+  }
