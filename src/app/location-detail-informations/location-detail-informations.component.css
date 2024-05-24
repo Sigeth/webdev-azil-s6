@@ -166,3 +166,18 @@
     font-weight: bold;
 
 }
+
+
+@media screen and (max-width: 800px) {
+    #Details{
+
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #F4F4F4;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 5%;
+    
+    }
+
+}
