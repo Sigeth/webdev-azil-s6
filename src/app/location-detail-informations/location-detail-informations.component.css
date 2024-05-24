@@ -79,11 +79,12 @@
 }
 
 #StatusContent{
-
+    
+    padding-left: 5%;
     display: flex;
     align-items: center;
     width: 70%;
-    background-color: lightcoral;
+    background-color: var(--light-red);
 
 }
 
@@ -105,7 +106,7 @@
     display: grid;
     grid-column: 2 / 2;
     grid-template-columns: repeat(4, 1fr);
-    border: solid lightgray;
+    border: 2px solid #F4F4F4;
     padding-left: 2%;
     padding-right: 2%;
     padding-top: 5%;

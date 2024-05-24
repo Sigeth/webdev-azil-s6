@@ -7,14 +7,23 @@
 }
 
 #main{
+
     border: solid;
-    border-radius: 15px;
-    border-color: gray;
+    border: 2px solid;
+    border-color: lightgray;
     margin: 10px;
 }
 
+#main2{
+
+    border: solid;
+    border: 2px solid;
+    border-color: lightgray;
+    margin: 10px;
+}
 
 .Menue{
+    
     margin: 5px;
     display: grid;
     grid-template-columns: 1fr  1fr;
@@ -22,13 +31,8 @@
     gap: 10px 2em;
 }
 
-.Menue:hover{
-    cursor: pointer;
-    background-color: gray;
-    animation: fadeIn 0.3s ease-in-out;
-}
-
 #icone-titre{
+    margin-left: 10%;
     grid-column: 1;
     display: flex;
     align-items: center; 

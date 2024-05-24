@@ -13,7 +13,6 @@ export class LocationDetailDropdownComponent {
   @Input() open1?: boolean;
   @Input() open2?: boolean;
 
-
   @Output() onHide = new EventEmitter<boolean>();
   @Output() onHide2 = new EventEmitter<boolean>();
 
@@ -25,4 +24,5 @@ export class LocationDetailDropdownComponent {
   setHide2(){
     this.onHide2.emit(true);
  }
+
 }
