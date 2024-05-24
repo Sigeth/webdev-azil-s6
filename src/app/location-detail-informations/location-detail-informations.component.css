@@ -1,4 +1,25 @@
-#BigTruc{
+#Title{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+#cockpit{
+
+    background-color: #F4F4F4;
+    border: 0px;
+    box-shadow: 0px 0px 0px;
+    font-weight: bold;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    width: 30%;
+    height: 50%;
+    
+}
+
+#Content{
 
     display: grid;
     grid-template-columns: 0.4fr 1fr;
