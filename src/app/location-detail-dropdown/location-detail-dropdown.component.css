@@ -1,4 +1,10 @@
+.revers{
+    transform: rotate(180deg);
+}
 
+.fleche{
+    margin-left: 8%;
+}
 
 #main{
     border: solid;

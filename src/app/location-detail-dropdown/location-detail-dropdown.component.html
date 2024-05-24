@@ -2,25 +2,37 @@
     @if(this.menu == 2){
     <div class="Menue" (click)="setHide2()">
         <div id="icone-titre">
-            <img src="../assets/img/administrative.png" alt="png" id="img">
+            <img src="../assets/icons/feuille.svg" alt="png" id="img">
             <h3 id="txt">Administrative Information</h3>
         </div>
         <div class="droite">
-            <img src="../assets/icons/fleche_verticale.svg" alt="png" id="img">
-            <h4>view more</h4>
+            @if(this.open1 == true){
+                <h4>Close</h4>
+                <img src="../assets/icons/fleche_verticale.svg" alt="png" id="img" class="fleche revers">
+            }
+            @else{
+                <h4>View more</h4>
+                <img src="../assets/icons/fleche_verticale.svg" alt="png" id="img" class="fleche">
+            }
         </div>
     </div>
     }
     @if(this.menu == 1){
     <div class="Menue" (click)="setHide()">
         <div id="icone-titre">
-            <img src="../assets/img/livre.png" alt="png" id="img">
+            <img src="../assets/icons/livre.svg" alt="png" id="img">
             <h3 id="txt">Delivery Information</h3>
 
         </div>
         <div class="droite">
-            <img src="../assets/icons/fleche_verticale.svg" alt="png" id="img">
-            <h4>view more</h4>
+            @if(this.open2 == true){
+                <h4>Close</h4>
+                <img src="../assets/icons/fleche_verticale.svg" alt="png" id="img" class="fleche revers">
+            }
+            @else{
+                <h4>View more</h4>
+                <img src="../assets/icons/fleche_verticale.svg" alt="png" id="img" class="fleche">
+            }
         </div>
     </div>
     }
