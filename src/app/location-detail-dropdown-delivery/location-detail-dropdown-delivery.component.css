@@ -5,7 +5,7 @@
 }
 
 #deliveryEmpty img {
-  margin: 10px;
+  margin: 5%;
 }
 
 #deliveryEmpty p {
@@ -16,9 +16,13 @@
   font-weight: normal;
 }
 
+#deliveryInformationsTable {
+  width: 100%;
+}
+
 #deliveryInformationsTable th, #deliveryInformationsTable td{
   border-bottom: solid #CCCCCC 1px;
-  padding: 10px 250px 10px 10px;
+  padding: 10px 100% 10px 10px;
   /*       top right bottom left */
 }
 
