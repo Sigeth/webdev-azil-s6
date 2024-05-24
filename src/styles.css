@@ -3,15 +3,19 @@
      DEBUT STYLE COMMUN - A UTILISER
 #############################################
 */
+
 :root
 {
   --primary-color: #012c10; /* Le vert pour la navbar et les décors */
   --light-grey: #F4F4F4; /* couleur gris clair alternative pour certains backgrounds */
   --white: #ffffff;
+  --grey: #CCCCCC; /* Gris foncé pour les bordures */
   --primary-font: Inter, sans-serif; /* la font utilisée partout */
   --text-color: #000000;
   --header-color: #CFA40B; /* pour certains éléments de texte importants */
   --orange: #F16E00; /* en décoration pour certains éléments interractifs */
+  --light-red: #FDE5E6; /* background notification 'inactif' */
+  --light-yellow: #FFFAE7; /* background notification 'deliveries' */
 
   /* A  UTILISER POUR LES STATUTS */
   --active: #3DE35A;
@@ -20,19 +24,15 @@
 }
 
 /*
-
 #############################################
       FIN STYLE COMMUN - A UTILISER
 #############################################
-
 */
 
 /*
-
 #############################################
       DEBUT STYLE NAVBAR - PAS TOUCHER
 #############################################
-
 */
 
 
@@ -57,7 +57,7 @@ body {
   font-size: 14px;
   display: flex;
   align-items: center;
-  background-color: var(--light-grey);
+  background-color: var(--white);
 }
 
 nav {
@@ -73,11 +73,34 @@ nav a {
   transition: background-color 0.3s;
 }
 
-@media screen and (min-width: 400px) {
+@media only screen and (max-width: 500px) /* AFFICHAGE TELEPHONE */
+{
+  #logo-desktop
+  {
+    display:none;
+  }
+  #logo-display {
+    display: flex;
+  }
+  #bottom-bar
+  {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 501px) /* AFFICHAGE DESKTOP */
+{
   #content {
     display: flex;
     margin-left: 3%;
   }
+  #logo-phone{
+    display:none;
+  }
+  #logo-desktop{
+    display:flex;
+  }
+
 }
 
 /* Navbar container */
@@ -119,6 +142,10 @@ nav a {
   color: black;
 }
 
+#logo:hover
+{
+  background: var(--primary-color);
+}
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
@@ -155,8 +182,8 @@ nav a {
   color: var(--orange);
 }
 
-.dropdown:hover .fa-caret-down {
-  color: var(--text-color);
+.dropdown:hover .img .fa-caret-down {
+
 }
 
 /*
@@ -170,9 +197,7 @@ nav a {
     DEBUT STYLE CONTENU - VOTRE SECTION
 #############################################
 */
-body {
-  font-family: var(--primary-font);
-}
+
 /*
 #############################################
       FIN STYLE CONTENU - VOTRE SECTION
