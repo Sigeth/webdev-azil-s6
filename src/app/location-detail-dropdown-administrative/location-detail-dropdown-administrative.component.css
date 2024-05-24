@@ -91,3 +91,26 @@ input::placeholder{
 #Admintable tbody > tr:nth-of-type(even) {
     background-color: var(--light-grey);
   }
+
+/* Pour les conteneurs des étiquettes et des champs de saisie */
+.input-container {
+    margin-bottom: 10px; /* Espacement entre chaque paire d'étiquette et de champ de saisie */
+  }
+  
+  /* Style pour les étiquettes */
+  .ScTxt {
+    display: block; /* Afficher chaque étiquette sur une nouvelle ligne */
+    font-weight: bold;
+  }
+  
+  /* Style pour les champs de saisie */
+  .inputArea {
+    width: 40%;
+    padding: 8px;
+    box-sizing: border-box;
+    
+  }
+  
+  #location_name  {
+    width: 30%;
+  }
