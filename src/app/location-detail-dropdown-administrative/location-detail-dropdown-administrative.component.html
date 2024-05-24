@@ -3,35 +3,38 @@
     <h3>General Information</h3>
     <p>These informations are used by My support and other team.</p>
     <label for="location_name" class="ScTxt">Location name</label>
-    <input id="location_name" placeholder="Input text"/>
+    <input id="location_name" placeholder="Input text" class="inputArea"  />
     <label for="location_desc" class="ScTxt" >Location Description</label>
-    <input id="location_desc" placeholder="Input text"/>
+    <input id="location_desc" placeholder="Input text" class="inputArea"/>
     <label for="address" class="ScTxt">Number and street name</label>
-    <input id="address" placeholder="Input text"/>
+    <input id="address" placeholder="Input text" class="inputArea"/>
     <label for="postal_code" class="ScTxt">Postal code</label>
-    <input id="postal_code" placeholder="Input text"/>
+    <input id="postal_code" class="inputArea" placeholder="Input text"/>
     <label for="city" class="ScTxt">City</label>
-    <input id="city" placeholder="Input text"/>
-    <button type="submit" class="ScTxt">Save</button>
+    <input id="city" class="inputArea" placeholder="Input text"/>
+    <button type="submit" class="Save">Save</button>
   </form> 
-
   <form id="local_contact_information">
     <h3>Local Contact Information</h3>
     <p>A local contact is mandatory to handle on-site actions</p>
     <div id="localIn">
-      <div id="Name">
-      <label for="last_name"class="ScTxt">Last name</label>
-      <input class="inputArea" id="last_name" placeholder="Input text"/>
-      <label for="first_name"class="ScTxt">First name</label>
-      <input id="first_name" placeholder="Input text"/>
-  </div>
-  <div id="Coor">
-    <label for="phone"class="ScTxt">Phone</label>  
-    <input id="phone" placeholder="Input text"/>
-    <label for="email"class="ScTxt">E-mail</label>
-    <input id="email" type="email" placeholder="Input text"/>
-  </div>
-  </div>
+      <div class="input-container">
+        <label for="last_name" class="ScTxt">Last name</label>
+        <input class="inputArea" id="last_name" placeholder="Input text" />
+      </div>
+      <div class="input-container">
+        <label for="first_name" class="ScTxt">First name</label>
+        <input class="inputArea" id="first_name" placeholder="Input text" />
+      </div>
+      <div class="input-container">
+        <label for="phone" class="ScTxt">Phone</label>
+        <input class="inputArea" id="phone" placeholder="Input text" />
+      </div>
+      <div class="input-container">
+        <label for="email" class="ScTxt">E-mail</label>
+        <input class="inputArea" id="email" type="email" placeholder="Input text" />
+      </div>
+    </div>
 
     <div id="availabity_div">
       <h5 class= "ScTxt">Availability</h5>
