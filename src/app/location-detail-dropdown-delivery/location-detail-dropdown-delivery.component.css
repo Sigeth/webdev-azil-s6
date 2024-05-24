@@ -1,5 +1,5 @@
 #deliveryEmpty {
-  background-color: lightyellow;
+  background-color: var(--light-yellow);
   display: flex;
   align-items: center;
 }
@@ -21,7 +21,7 @@
 }
 
 #deliveryInformationsTable th, #deliveryInformationsTable td{
-  border-bottom: solid #CCCCCC 1px;
+  border-bottom: solid var(--light-grey) 1px;
   padding: 10px 100% 10px 10px;
   /*       top right bottom left */
 }
