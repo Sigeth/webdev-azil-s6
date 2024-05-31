@@ -1,3 +1,7 @@
+p {
+  margin-left: 4%;
+}
+
 #deliveryEmpty {
   background-color: var(--light-yellow);
   display: flex;
@@ -17,8 +21,11 @@
 }
 
 #deliveryInformationsTable {
-  width: 100%;
+  width: 94%;
+  margin-left: 3%;
 }
+
+
 
 #deliveryInformationsTable th, #deliveryInformationsTable td{
   border-bottom: solid var(--light-grey) 1px;
@@ -28,4 +35,8 @@
 
 #deliveryInformationsTable tbody > tr:nth-of-type(even) {
   background-color: var(--light-grey);
+}
+
+.sortImg:hover{
+  filter: invert(47%) sepia(43%) saturate(6475%) hue-rotate(14deg) brightness(108%) contrast(101%);
 }
