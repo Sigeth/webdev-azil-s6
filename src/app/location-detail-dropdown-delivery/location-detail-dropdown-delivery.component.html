@@ -2,17 +2,17 @@
   <p>Find here all deliveries for hardware components</p>
   @if (deliveryInformations.length === 0) {
     <div id="deliveryEmpty">
-      <img ngSrc="assets/icons/rond_orange.svg" width="32" height="32" alt="orange warning icon"/>
+      <img ngSrc="../../Projet Web S6/HELP/icone/rond_orange.svg" width="32" height="32" alt="orange warning icon"/>
       <p>No deliveries to display</p>
     </div>
   } @else {
     <table id="deliveryInformationsTable">
       <thead>
       <tr>
-        <th scope="col">Device</th>
-        <th scope="col">Model</th>
-        <th scope="col">Number</th>
-        <th scope="col">Expected Delivery</th>
+        <th scope="col">Device<img class="sortImg" src="../../Projet Web S6/HELP/icone/fleche_tri.svg" (click)="sortTableDevice()"></th>
+        <th scope="col">Model<img class="sortImg" src="../../Projet Web S6/HELP/icone/fleche_tri.svg" (click)="sortTableModel()"></th>
+        <th scope="col">Number<img class="sortImg" src="../../Projet Web S6/HELP/icone/fleche_tri.svg" (click)="sortTableNumber()"></th>
+        <th scope="col">Expected Delivery<img class="sortImg" src="../../Projet Web S6/HELP/icone/fleche_tri.svg" (click)="sortTableDate()"></th>
       </tr>
       </thead>
       <tbody>
@@ -21,7 +21,7 @@
             <td>{{ deliveryInformation.device }}</td>
             <td>{{ deliveryInformation.model }}</td>
             <td>{{ deliveryInformation.number }}</td>
-            <td>{{ deliveryInformation.expected_delivery }}</td>
+            <td>{{ deliveryInformation.expected_delivery.toLocaleDateString("fr-FR") }}</td>
           </tr>
         }
       </tbody>

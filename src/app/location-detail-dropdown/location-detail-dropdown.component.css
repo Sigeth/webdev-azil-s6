@@ -1,28 +1,30 @@
-
-
-#main{
-    border: solid;
-    border-radius: 15px;
-    border-color: gray;
-    margin: 10px;
+.revers{
+    transform: rotate(180deg);
 }
 
+.fleche{
+    margin-left: 8%;
+}
+
+#main{
+
+    margin-right: 3%;
+    border: solid;
+    border: 2px solid;
+    border-color: lightgray;
+    margin-top: 1%;
+}
 
 .Menue{
+    
     margin: 5px;
     display: grid;
-    grid-template-columns: 1fr  1fr;
-    grid-template-columns: 450px 300px;
+    grid-template-columns: 35% 20%;
     gap: 10px 2em;
 }
 
-.Menue:hover{
-    cursor: pointer;
-    background-color: gray;
-    animation: fadeIn 0.3s ease-in-out;
-}
-
 #icone-titre{
+    margin-left: 10%;
     grid-column: 1;
     display: flex;
     align-items: center; 
@@ -41,7 +43,7 @@
     display: flex;
     align-items: center;
     grid-column: 5;
-    width: 150px;
+    width: 80%;
 }
 
 @keyframes fadeIn {

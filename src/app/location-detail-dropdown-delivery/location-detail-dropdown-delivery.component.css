@@ -1,11 +1,15 @@
+p {
+  margin-left: 4%;
+}
+
 #deliveryEmpty {
-  background-color: lightyellow;
+  background-color: var(--light-yellow);
   display: flex;
   align-items: center;
 }
 
 #deliveryEmpty img {
-  margin: 10px;
+  margin: 5%;
 }
 
 #deliveryEmpty p {
@@ -16,12 +20,23 @@
   font-weight: normal;
 }
 
+#deliveryInformationsTable {
+  width: 94%;
+  margin-left: 3%;
+}
+
+
+
 #deliveryInformationsTable th, #deliveryInformationsTable td{
-  border-bottom: solid #CCCCCC 1px;
-  padding: 10px 250px 10px 10px;
+  border-bottom: solid var(--light-grey) 1px;
+  padding: 10px 100% 10px 10px;
   /*       top right bottom left */
 }
 
 #deliveryInformationsTable tbody > tr:nth-of-type(even) {
   background-color: var(--light-grey);
+}
+
+.sortImg:hover{
+  filter: invert(47%) sepia(43%) saturate(6475%) hue-rotate(14deg) brightness(108%) contrast(101%);
 }

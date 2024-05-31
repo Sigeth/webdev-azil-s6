@@ -1,4 +1,4 @@
-  <div class="general">
+<div class="general">
   <form id="general_information">
     <h3>General Information</h3>
     <p>These informations are used by My support and other team.</p>
@@ -55,8 +55,8 @@
       <h5 class= "ScTxt">Availability</h5>
       <p class= "ScTxt">(UTC+01:00) Bruxelles, Copenhague, Madrid, Paris</p>
       <button class="select_availability" type="button" class="radio">Manual</button>
-      <button class="select_availability" type="button" class="radio">24h/7j</button>
-      <button class="select_availability" type="button" class="radio">Weekdays only</button>
+      <button class="select_availability" type="button" class="radio" (click)="check_24h_7()">24h/7j</button>
+      <button class="select_availability" type="button" class="radio" (click)="check_weekdays()">Weekdays only</button>
       <table id="Admintable">
         <thead>
           <tr>
