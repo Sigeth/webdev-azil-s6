@@ -1,141 +1,141 @@
-input {
-    border: none;
-    border-bottom: 1px solid black;
-    color:black;
-  }
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  .Save {
-    background-color: white;
-    color: black;
-    padding:1% 4%;
-    border: 2px solid black; 
-    font-weight: bold;
-  }
-
-  .ScTxt {
-    font-size:smaller;
-    color :gray;
-  }
-
-  .radio {
-        background-color: white;
-        color: black;
-        margin-right : 5%;
-        border: 2px solid gray;
-        border-width: 2px 2px;
-        border-radius: 40px;
-        padding-right : 1%;
-        padding-left: 1%;
-        padding-top: 0.5%;
-        padding-bottom : 0.5%;
-  } 
-
-  .radio:focus {
-    background-color: white;
-    color: black;
-    margin-right : 5%;
-    border: 2px solid #F16E00;
-    font-weight: bold;
-    border-width: 2px 2px;
-    border-radius: 40px;
-    padding-right : 1%;
-    padding-left: 1%;
-    padding-top: 0.5%;
-    padding-bottom : 0.5%;
-} 
-
-input[type="checkbox"] {
-    position: relative;
-    appearance: none;
-    width: 20px; 
-    height: 20px; 
-    border: 2px solid #999; 
-    cursor: pointer;
-  }
-  
-
-  input[type="checkbox"]:checked::after {
-    content: ""; 
-    position: absolute;
-    left: 5px; 
-    top: 1px; 
-    width: 6px; 
-    height: 12px; 
-    border: 2px solid #F16E00; 
-    border-width: 0 2px 2px 0; 
-    transform: rotate(45deg); 
-  }
-
-  input[type="checkbox"]:checked {
-    border: 2px solid #F16E00;
-    clip: auto;
-  } 
+.scroll {
+   overflow: auto;
+  white-space: nowrap;  
+}
 
 .general {
-    padding : 5%;
-    padding-top : 2%;
+  padding: 5%;
+  padding-top: 2%;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+.Save {
+  background-color: white;
+  color: black;
+  padding: 1% 4%;
+  border: 2px solid black;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.Save:hover {
+  background-color: black; 
+  color: white; 
+}
+
+.ScTxt {
+  font-size: smaller;
+  color: gray;
+}
+
+.radio {
+  background-color: white;
+  color: black;
+  margin-right: 5%;
+  border: 2px solid gray;
+  border-radius: 40px;
+  padding: 0.5% 1%;
+}
+
+.radio:focus {
+  border: 2px solid #F16E00;
+  font-weight: bold;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #999;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: 2px solid #F16E00;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked {
+  border: 2px solid #F16E00;
 }
 
 input:focus {
-    outline: none;
-  }
-input::placeholder{
-    text-align: left;
-    font-weight:normal;
-    color:black;
-    opacity: 100%;
-    margin:2%;
+  outline: none;
+}
+
+input::placeholder {
+  text-align: left;
+  font-weight: normal;
+  color: black;
+  opacity: 100%;
+  margin: 2%;
 }
 
 #Admintable tbody > tr:nth-of-type(even) {
-    background-color: var(--light-grey);
-  }
-
-/* Pour les conteneurs des étiquettes et des champs de saisie */
-.input-container {
-    margin-bottom: 10px; /* Espacement entre chaque paire d'étiquette et de champ de saisie */
-  }
-  
-  /* Style pour les étiquettes */
-  .ScTxt {
-    display: block; /* Afficher chaque étiquette sur une nouvelle ligne */
-    font-weight: bold;
-  }
-  
-  /* Style pour les champs de saisie */
-  .inputArea {
-    width: 95%;
-    padding: 2%;
-    box-sizing: border-box;
-    
-  }
-  
-
-#localIn {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--light-grey);
 }
 
+.input-container {
+  margin-bottom: 10px;
+}
+
+.ScTxt {
+  display: block;
+  font-weight: bold;
+}
+
+.inputArea {
+  width: 95%;
+  padding: 2%;
+}
+
+#localIn,
+#lgn1,
+#lgn2 {
+  display: grid;
+  gap: 10px;
+}
+
+#localIn {
+  grid-template-columns: repeat(2,1fr);
+}
 
 #lgn1 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding-bottom: 2%;
 }
 
-
-
 #lgn2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding-bottom: 2%;
 }
 
 #btnSave {
-  padding-top : 2%;
+  padding-top: 2%;
 }
-
 
 #Admintable {
   width: 100%;
@@ -144,15 +144,52 @@ input::placeholder{
 
 #Admintable th,
 #Admintable td {
-  padding: 15px; /* Augmentez la taille du padding pour agrandir les cellules */
+  padding: 15px;
   text-align: center;
-  font-size: 1.2em; /* Augmentez la taille de la police pour agrandir le texte */
+  font-size: 1.2em;
 }
 
 #Admintable th.tabDay {
-  width: 14%; /* Répartit l'espace également entre les jours de la semaine */
+  width: 14%;
 }
 
 #Admintable th[scope="row"] {
-  width: 10%; /* Augmentez si vous avez besoin de plus de place pour le titre de la rangée */
+  width: 10%;
+}
+
+@media (max-width: 610px) {
+  .general {
+    padding: 3%;
+  }
+
+  #localIn,
+  #lgn1,
+  #lgn2 {
+    grid-template-columns: 1fr;
+  }
+
+  .Save,
+  .radio {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  #Admintable {
+    width: 100%;
+  }
+
+  #Admintable th,
+  #Admintable td {
+    padding: 8px; /* Réduit le padding pour rendre le tableau plus petit */
+    font-size: 0.9em; /* Réduit la taille de la police pour le tableau */
+  }
+
+  #Admintable th.tabDay {
+    width: auto;
+  }
+
+  #Admintable th[scope="row"] {
+    width: auto;
+  }
 }
