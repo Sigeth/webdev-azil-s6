@@ -2,16 +2,31 @@
   <form id="general_information">
     <h3>General Information</h3>
     <p>These informations are used by My support and other team.</p>
-    <label for="location_name" class="ScTxt">Location name</label>
+    <div id="lgn1">
+    <div id="Divlocation_name">
+      <label for="location_name" class="ScTxt">Location name</label>
     <input id="location_name" placeholder="Input text" class="inputArea"  />
+    </div>
+    <div id="Divlocation">
     <label for="location_desc" class="ScTxt" >Location Description</label>
     <input id="location_desc" placeholder="Input text" class="inputArea"/>
+    </div>
+    </div>
+    <div id="lgn2">
+    <div id="Divaddress">
     <label for="address" class="ScTxt">Number and street name</label>
     <input id="address" placeholder="Input text" class="inputArea"/>
+    </div>
+    <div id="Divpostal_code">
     <label for="postal_code" class="ScTxt">Postal code</label>
     <input id="postal_code" class="inputArea" placeholder="Input text"/>
+    </div>
+    <div id="Divcity">
     <label for="city" class="ScTxt">City</label>
     <input id="city" class="inputArea" placeholder="Input text"/>
+  </div>
+  
+  </div>
     <button type="submit" class="Save">Save</button>
   </form> 
   <form id="local_contact_information">
@@ -68,7 +83,9 @@
           }
         </tbody>
       </table>
+    <div id="btnSave">
       <button type="submit" class="Save">Save</button>
+    </div>
     </div>
   </form>
   </div>
