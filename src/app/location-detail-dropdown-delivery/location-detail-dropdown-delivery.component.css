@@ -40,3 +40,20 @@ p {
 .sortImg:hover{
   filter: invert(47%) sepia(43%) saturate(6475%) hue-rotate(14deg) brightness(108%) contrast(101%);
 }
+
+@media only screen and (max-width: 610px) /* AFFICHAGE TELEPHONE */
+{
+  #deliveryInformationsDiv {
+    overflow-x: scroll;
+  }
+
+  p {
+    position: sticky;
+  }
+
+  th, td{
+    min-width: 200px;
+  }
+
+
+}
