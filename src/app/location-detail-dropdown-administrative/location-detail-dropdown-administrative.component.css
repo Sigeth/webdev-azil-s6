@@ -105,12 +105,54 @@ input::placeholder{
   
   /* Style pour les champs de saisie */
   .inputArea {
-    width: 40%;
-    padding: 8px;
+    width: 95%;
+    padding: 2%;
     box-sizing: border-box;
     
   }
   
-  #location_name  {
-    width: 30%;
-  }
+
+#localIn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+#lgn1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 2%;
+}
+
+
+
+#lgn2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 2%;
+}
+
+#btnSave {
+  padding-top : 2%;
+}
+
+
+#Admintable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#Admintable th,
+#Admintable td {
+  padding: 15px; /* Augmentez la taille du padding pour agrandir les cellules */
+  text-align: center;
+  font-size: 1.2em; /* Augmentez la taille de la police pour agrandir le texte */
+}
+
+#Admintable th.tabDay {
+  width: 14%; /* Répartit l'espace également entre les jours de la semaine */
+}
+
+#Admintable th[scope="row"] {
+  width: 10%; /* Augmentez si vous avez besoin de plus de place pour le titre de la rangée */
+}
