@@ -12,19 +12,19 @@ export class LocationDetailDropdownDeliveryComponent {
       device: "Edge",
       model: "Edge510-lte",
       number: 4,
-      expected_delivery: "01/09/2023"
+      expected_delivery: new Date(2023, 9, 1)
     },
     {
       device: "Edge",
       model: "Edge530-lte",
       number: 2,
-      expected_delivery: "28/08/2023"
+      expected_delivery: new Date(2023, 8, 28)
     },
     {
       device: "Edge",
       model: "Edge550",
       number: 1,
-      expected_delivery: "30/09/2023"
+      expected_delivery: new Date(2023, 9, 30)
     }
   ];
   // deliveryInformations: DeliveryInformation[] = [];
@@ -73,17 +73,11 @@ export class LocationDetailDropdownDeliveryComponent {
 
   sortTableDate() {
     this.deliveryInformations.sort((el1: DeliveryInformation, el2: DeliveryInformation) => {
-      let date1 = new Date(el1.expected_delivery);
-      let date2 = new Date(el2.expected_delivery);
-      console.log(date1);
-      console.log(date2);
-
-      //TODO: change expected_delivery to Date
-      if (date1 > date2) {
+      if (el1.expected_delivery > el2.expected_delivery) {
         return 1;
       }
 
-      if (date1 < date2) {
+      if (el1.expected_delivery < el2.expected_delivery) {
         return -1;
       }
 
