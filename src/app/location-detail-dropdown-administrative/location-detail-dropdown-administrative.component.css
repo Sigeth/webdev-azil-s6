@@ -176,12 +176,12 @@ input::placeholder {
   }
 
   #Admintable {
-    width: 100%;
+    width: 80%;
   }
 
   #Admintable th,
   #Admintable td {
-    padding: 8px; /* Réduit le padding pour rendre le tableau plus petit */
+    padding: 2.5px; /* Réduit le padding pour rendre le tableau plus petit */
     font-size: 0.9em; /* Réduit la taille de la police pour le tableau */
   }
 
