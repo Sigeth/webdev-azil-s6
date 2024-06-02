@@ -1,38 +1,38 @@
 
     <div id="main">
         @if(this.menu == 2){
-        <div class="Menue" (click)="setHide2()">
+        <div class="menu" (click)="setHide2()">
             <div id="icone-titre">
-                <img src="../HELP/icone/feuille.svg" alt="png" id="img">
-                <h3 id="txt">Administrative Information</h3>
+                <img src="../HELP/icone/feuille.svg" alt="png" class="icone">
+                <h3 id="information">Administrative Information</h3>
             </div>
-            <div class  ="droite">
+            <div class  ="view-more">
                 @if(this.open1 == true){
                     <h4>Close</h4>
-                    <img src="../HELP/icone/fleche_verticale.svg" alt="png" id="img" class="fleche revers">
+                    <img src="../HELP/icone/fleche_verticale.svg" alt="png" class="fleche revers icone">
                 }
                 @else{
                     <h4>View more</h4>
-                    <img src="../HELP/icone/fleche_verticale.svg" alt="png" id="img" class="fleche">
+                    <img src="../HELP/icone/fleche_verticale.svg" alt="png" class="fleche icone">
                 }
             </div>
         </div>
         }
         @if(this.menu == 1){
-        <div class="Menue" (click)="setHide()">
+        <div class="menu" (click)="setHide()">
             <div id="icone-titre">
-                <img src="../HELP/icone/livre.svg" alt="png" id="img">
-                <h3 id="txt">Delivery Information</h3>
+                <img src="../HELP/icone/livre.svg" alt="png" class="icone">
+                <h3 id="information">Delivery Information</h3>
 
             </div>
-            <div class="droite">
+            <div class="view-more">
                 @if(this.open2 == true){
                     <h4 id="close">Close</h4>
-                    <img src="../HELP/icone/fleche_verticale.svg" alt="png" id="img" class="fleche revers">
+                    <img src="../HELP/icone/fleche_verticale.svg" alt="png" class="fleche revers icone">
                 }
                 @else{
                     <h4>View more</h4>
-                    <img src="../HELP/icone/fleche_verticale.svg" alt="png" id="img" class="fleche">
+                    <img src="../HELP/icone/fleche_verticale.svg" alt="png" class="fleche icone">
                 }
             </div>
         </div>
