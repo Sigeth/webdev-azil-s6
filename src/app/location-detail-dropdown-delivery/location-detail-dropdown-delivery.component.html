@@ -2,21 +2,21 @@
   <p>Find here all deliveries for hardware components</p>
   @if (deliveryInformations.length === 0) {
     <div id="deliveryEmpty">
-      <img ngSrc="../../Projet Web S6/HELP/icone/rond_orange.svg" width="32" height="32" alt="orange warning icon"/>
+      <img ngSrc="../HELP/icone/rond_orange.svg" width="32" height="32" alt="orange warning icon"/>
       <p>No deliveries to display</p>
     </div>
   } @else {
     <table id="deliveryInformationsTable">
       <thead>
       <tr>
-        <th scope="col">Device<img class="sortImg" src="../../Projet Web S6/HELP/icone/fleche_tri.svg" (click)="sortTableDevice()"></th>
-        <th scope="col">Model<img class="sortImg" src="../../Projet Web S6/HELP/icone/fleche_tri.svg" (click)="sortTableModel()"></th>
-        <th scope="col">Number<img class="sortImg" src="../../Projet Web S6/HELP/icone/fleche_tri.svg" (click)="sortTableNumber()"></th>
-        <th scope="col">Expected Delivery<img class="sortImg" src="../../Projet Web S6/HELP/icone/fleche_tri.svg" (click)="sortTableDate()"></th>
+        <th scope="col">Device<img class="sortImg" src="../HELP/icone/fleche_tri.svg" (click)="sortTableDevice()"></th>
+        <th scope="col">Model<img class="sortImg" src="../HELP/icone/fleche_tri.svg" (click)="sortTableModel()"></th>
+        <th scope="col">Number<img class="sortImg" src="../HELP/icone/fleche_tri.svg" (click)="sortTableNumber()"></th>
+        <th scope="col">Expected Delivery<img class="sortImg" src="../HELP/icone/fleche_tri.svg" (click)="sortTableDate()"></th>
       </tr>
       </thead>
       <tbody>
-        @for (deliveryInformation of deliveryInformations; track deliveryInformation.number) {
+        @for (deliveryInformation of deliveryInformations; track $index) {
           <tr>
             <td>{{ deliveryInformation.device }}</td>
             <td>{{ deliveryInformation.model }}</td>
