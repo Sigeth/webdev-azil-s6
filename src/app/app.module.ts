@@ -9,6 +9,7 @@ import { LocationDetailDropdownAdministrativeComponent } from './location-detail
 import { LocationDetailDropdownDeliveryComponent } from './location-detail-dropdown-delivery/location-detail-dropdown-delivery.component';
 import { LocationDetailDropdownComponent } from './location-detail-dropdown/location-detail-dropdown.component';
 import {NgOptimizedImage} from "@angular/common";
+import {CockpitHelpComponent} from "./cockpit-help/cockpit-help.component";
 
 @NgModule({
   declarations: [
@@ -17,13 +18,14 @@ import {NgOptimizedImage} from "@angular/common";
     LocationDetailInformationsComponent,
     LocationDetailDropdownAdministrativeComponent,
     LocationDetailDropdownDeliveryComponent,
-    LocationDetailDropdownComponent
+    LocationDetailDropdownComponent,
+    CockpitHelpComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgOptimizedImage
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgOptimizedImage
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
