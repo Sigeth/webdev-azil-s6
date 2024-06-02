@@ -1,4 +1,4 @@
-#Title{
+#title{
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -6,7 +6,7 @@
     
 }
 
-#LocationName{
+#locationName{
 
     grid-column: 1 / 2;
     grid-row: 1;
@@ -42,7 +42,7 @@
     
 }
 
-#Content{
+#content{
 
     margin-right: 3%;
     display: grid;
@@ -51,7 +51,7 @@
 
 }
 
-#LocationId_Status{
+#locationId_Status{
 
     display: grid;
     grid-column: 1 / 2;
@@ -60,26 +60,26 @@
 
 }
 
-#LocationId{
+#locationId{
 
     grid-row: 1 / 2;
 
 }
 
-#LocationIdValue{
+#locationIdValue{
 
     font-weight: bold;
 
 }
 
-#Status{
+#status{
 
     display: grid;
     grid-row: 2 / 2;
 
 }
 
-#StatusContent{
+#statusContent{
     
     padding-left: 5%;
     display: flex;
@@ -89,20 +89,20 @@
 
 }
 
-#StatusImg{
+#statusImg{
 
     width: 30px;
     height: 30px;
 
 }
 
-#StatusValue{
+#statusValue{
 
     font-weight: bold;
 
 }
 
-#Details{
+#details{
 
     display: grid;
     grid-column: 2 / 2;
@@ -114,52 +114,52 @@
 
 }
 
-#LocationType{
+#locationType{
 
     grid-column: 1 / 4;
     grid-row: 1 / 1;
 
 }
 
-#LocationTypeValue{
+#locationTypeValue{
 
     font-weight: bold;
 
 }
 
-#AttachedRegion{
+#attachedRegion{
 
     grid-column: 2 / 4;
     grid-row: 1 / 1;
 }
 
-#AttachedRegionValue{
+#attachedRegionValue{
 
     font-weight: bold;
 
 }
 
-#AttachedProject{
+#attachedProject{
 
     grid-column: 3 / 4;
     grid-row: 1 / 1;
 
 }
 
-#AttachedProjectValue{
+#attachedProjectValue{
 
     font-weight: bold;
 
 }
 
-#VendorDashboard{
+#vendorDashboard{
 
     grid-column: 4 / 4;
     grid-row: 1 / 1;
 
 }
 
-#VendorDashboardValue{
+#vendorDashboardValue{
 
     font-weight: bold;
 
@@ -168,12 +168,12 @@
 
 @media screen and (max-width: 610px) {
 
-    #Content{
+    #content{
         display: flex;
         flex-direction: column;
     }
 
-    #Details{
+    #details{
 
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -187,43 +187,43 @@
     
     }
 
-    #LocationType{
+    #locationType{
         grid-column: 1 / 2;
         grid-row: 1 / 2;
     }
 
-    #AttachedRegion{
+    #attachedRegion{
         grid-column: 2 / 2;
         grid-row: 1 / 2;
     }
 
-    #AttachedProject{
+    #attachedProject{
         grid-column: 1 / 2;
         grid-row: 2 / 2;
     }
 
-    #VendorDashboard{
+    #vendorDashboard{
         grid-column: 2 / 2;
         grid-row: 2 / 2;
     }
 
-    #LocationId_Status{
+    #locationId_Status{
         display: grid;
         margin-top: 0%;
         width: 100%;
     }
 
-    #LocationId{
+    #locationId{
         grid-column: 1 / 2;
         grid-row: 1 / 1;
     }
 
-    #Status{
+    #status{
         grid-column: 2 / 2;
         grid-row: 1 / 1;
     }
 
-    #StatusContent{
+    #statusContent{
         width: 90%;
         padding-left: 5%;
         display: flex;
